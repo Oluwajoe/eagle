@@ -7,7 +7,7 @@ import path from 'path';
 const GOLD_EAGLE_URL = 'https://gold-eagle-api.fly.dev/user/me';
 const GITHUB_JS_URL = 'https://raw.githubusercontent.com/hackff1/hackff/main/c3-eagl.js';
 const PASSWORD = 'foketcrypto'; // Password for the GitHub JS script
-const AUTH_TOKEN = 'your-auth-token-here'; // Add your actual token here
+const AUTH_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoiMmQ3YzAxZWMtZTQyYi00NjY4LWJiYzktNDliZDY3ZmViMzdkIiwiZmlyc3RfbmFtZSI6IlNhbG1hbiIsImxhbmd1YWdlX2NvZGUiOiJlbiIsInVzZXJuYW1lIjpudWxsfSwic2Vzc2lvbl9pZCI6MTQ1NTkyMSwic3ViIjoiMmQ3YzAxZWMtZTQyYi00NjY4LWJiYzktNDliZDY3ZmViMzdkIiwiZXhwIjoxNzQzMTUzNzM0fQ.NQ0AkZiRngufL4iW-aeoAH6gwi3JYFTkcN3ysOo1Yos'; // Add your actual token here
 
 // Function to fetch and execute the JS script from GitHub
 async function fetchAndRunScript() {
