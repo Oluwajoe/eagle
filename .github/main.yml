@@ -1,0 +1,25 @@
+name: Gold Eagle Automation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install node-fetch --no-bin-links  # Use npm install instead of npm ci
+
+      - name: Run automation script
+        run: node main.mjs
