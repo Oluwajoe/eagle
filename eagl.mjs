@@ -2,7 +2,11 @@
 import fetch from 'node-fetch';
 import { exec } from 'child_process';
 import fs from 'fs';
-import path from 'path';
+import path, { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const GOLD_EAGLE_URL = 'https://gold-eagle-api.fly.dev/user/me';
 const GITHUB_JS_URL = 'https://raw.githubusercontent.com/hackff1/hackff/main/c3-eagl.js';
